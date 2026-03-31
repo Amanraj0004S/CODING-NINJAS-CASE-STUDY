@@ -3,215 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coding Ninjas Case Study — Aman Raj Singh</title>
+<title>Conversion Case Study | Aman Raj Singh</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #FAF9F6;
-  color: #111;
-  overflow-x: hidden;
+  margin:0;
+  font-family:'Inter', sans-serif;
+  background:#f5f2ed;
+  color:#111;
+  overflow-x:hidden;
 }
 
 h1,h2,h3 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Playfair Display', serif;
 }
 
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 80px 20px;
+.container {
+  max-width:1000px;
+  margin:auto;
+  padding:80px 20px;
 }
 
 .hero {
-  text-align: center;
-  padding-top: 120px;
+  text-align:center;
+  padding-top:120px;
 }
 
 .hero h1 {
-  font-size: 42px;
-  line-height: 1.3;
+  font-size:48px;
+  line-height:1.3;
 }
 
 .hero p {
-  margin-top: 20px;
-  color: #555;
+  margin-top:20px;
+  color:#555;
+}
+
+.tag {
+  margin-top:20px;
+  font-size:14px;
+  letter-spacing:2px;
 }
 
 .highlight {
-  background: rgba(0,0,0,0.05);
-  padding: 20px;
-  margin-top: 20px;
+  background:#eae6df;
+  padding:20px;
+  margin:20px 0;
 }
 
-ul {
-  padding-left: 20px;
+.metric-card {
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#fff;
+  margin:10px 0;
+  border-left:4px solid #000;
 }
 
-.flow h3 {
-  margin-top: 30px;
+.flow-box {
+  border:1px solid #ddd;
+  padding:20px;
+  margin:20px 0;
+  background:#fff;
 }
 
-.metrics h3 {
-  margin-top: 20px;
+.compare {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
 }
 
-/* Loader */
-#loader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #FAF9F6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
+.compare div {
+  background:#fff;
+  padding:20px;
 }
 
-.loader-line {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #C2A65A;
-  border-radius: 50%;
-  animation: spin 1.5s linear infinite;
+.bad {
+  border-left:4px solid #999;
 }
 
-@keyframes spin {
-  100% { transform: rotate(360deg); }
+.good {
+  border-left:4px solid #000;
 }
 
-/* Fade-in */
+.button {
+  padding:15px 25px;
+  border:1px solid #000;
+  display:inline-block;
+  margin:10px;
+  cursor:pointer;
+}
+
+.hidden {
+  display:none;
+}
+
 .fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease;
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.6s ease;
 }
 
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
+.show {
+  opacity:1;
+  transform:translateY(0);
 }
 </style>
 </head>
 
 <body>
 
-<div id="loader">
-  <div class="loader-line"></div>
+<div class="container">
+
+<div class="hero fade">
+<div class="tag">AMAN RAJ SINGH</div>
+<h1>Fixing ₹1Cr/month Revenue Leakage in a High-Ticket EdTech Funnel</h1>
+<p>This is not a UX problem. This is a positioning failure causing high-intent users to drop.</p>
 </div>
 
-<section class="hero fade">
-<h1>Fixing Conversion Leakage in a ₹1.5L Data Analytics Funnel</h1>
-<p>Redesigned the enrollment journey for non-technical professionals by replacing a generic funnel with a domain-personalized decision system.</p>
-</section>
+<h2 class="fade">The Problem</h2>
 
-<section class="fade">
-<h2>Executive Summary</h2>
-<p>The Coding Ninjas Data Analytics Bootcamp was facing significant drop-offs across the funnel. High-intent professionals engaged but failed to convert.</p>
-<p>The root cause was a mismatch between user intent and product communication.</p>
-<div class="highlight">
-North Star Metric: Checkout Intent Rate (Non-Technical Professionals)
+<div class="highlight fade">
+High-intent working professionals attend webinars but fail to convert.  
+Not because they lack interest — but because they don’t see themselves in the product.
 </div>
-</section>
 
-<section class="fade">
-<h2>Root Cause Analysis</h2>
-<ul>
-<li>Users don’t feel relevance</li>
-<li>Messaging too technical</li>
-<li>Designed for freshers</li>
-<li>No segmentation</li>
-<li>Static funnel</li>
-</ul>
-
-<div class="highlight">
-Domain Imposter Syndrome + Contextual Trust Deficit
+<div class="metric-card fade">
+<span>Monthly High Intent Users</span>
+<span>~1000</span>
 </div>
-</section>
 
-<section class="fade">
-<h2>User Intent (JTBD)</h2>
-<div class="highlight">
-“When my career stagnates, I want domain-relevant data skills to grow without a pay cut.”
+<div class="metric-card fade">
+<span>Drop-off Rate</span>
+<span>~70%</span>
 </div>
-</section>
 
-<section class="fade">
-<h2>Proposed Solution</h2>
-
-<div class="flow">
-<h3>Step 1: Identity Segmentation</h3>
-<p>Student vs Working Professional</p>
-
-<h3>Step 2: Intent Detection</h3>
-<p>Enhance Domain vs Career Switch</p>
-
-<h3>Step 3: Domain Grid</h3>
-<p>HR, Finance, Sales, Ops, Tech, Consulting</p>
-
-<h3>Step 4: Dynamic Messaging</h3>
-<p>Personalized headlines + salary outcomes</p>
-
-<h3>Step 5: Personalized Video</h3>
-<p>Domain-specific pre-webinar content</p>
+<div class="metric-card fade">
+<span>Revenue Leakage</span>
+<span>₹1Cr+/month</span>
 </div>
-</section>
 
-<section class="fade">
-<h2>Success Metrics</h2>
+<h2 class="fade">What’s Actually Broken</h2>
 
-<div class="metrics">
-<h3>TOFU</h3>
-<p>Lead Form Completion ↑</p>
+<div class="compare fade">
 
-<h3>MOFU</h3>
-<p>Retention ↑</p>
-
-<h3>BOFU</h3>
-<p>Call Conversion ↑</p>
-
-<h3>Revenue</h3>
-<p>Course Conversion ↑</p>
+<div class="bad">
+<h3>Current Funnel</h3>
+<p>Same page for everyone</p>
+<p>Technical jargon heavy</p>
+<p>Generic “Data Analyst” outcome</p>
+<p>Designed for freshers</p>
 </div>
-</section>
 
-<section class="fade">
-<h2>Final Insight</h2>
-<div class="highlight">
+<div class="good">
+<h3>What Users Need</h3>
+<p>Identity alignment</p>
+<p>Domain relevance</p>
+<p>Career upgrade clarity</p>
+<p>Risk reduction</p>
+</div>
+
+</div>
+
+<h2 class="fade">User Reality</h2>
+
+<div class="highlight fade">
+“I don’t want to become a fresher again. I want to grow in my domain.”
+</div>
+
+<h2 class="fade">Interactive Funnel Simulation</h2>
+
+<div class="flow-box fade">
+
+<p>Select your path:</p>
+
+<div class="button" onclick="selectUser('student')">College Student</div>
+<div class="button" onclick="selectUser('working')">Working Professional</div>
+
+<div id="step2" class="hidden">
+<p>What do you want?</p>
+<div class="button" onclick="selectIntent()">Grow in Current Domain</div>
+<div class="button">Switch Career</div>
+</div>
+
+<div id="step3" class="hidden">
+<p>Select your domain:</p>
+<div class="button">HR</div>
+<div class="button">Finance</div>
+<div class="button">Sales</div>
+<div class="button">Operations</div>
+</div>
+
+<div id="result" class="hidden highlight">
+You are not becoming a Data Analyst.  
+You are becoming a <strong>HR Analytics Lead</strong> (Avg ₹15L+)
+</div>
+
+</div>
+
+<h2 class="fade">Solution</h2>
+
+<p class="fade">
+Replace static funnel with identity-driven decision system.
+</p>
+
+<div class="flow-box fade">
+<p>1. Segment user immediately</p>
+<p>2. Capture intent</p>
+<p>3. Anchor to domain</p>
+<p>4. Personalize outcome</p>
+<p>5. Deliver contextual content</p>
+</div>
+
+<h2 class="fade">Why This Works</h2>
+
+<div class="highlight fade">
+The problem was never lack of demand.  
+It was mismatch between user identity and product narrative.
+</div>
+
+<h2 class="fade">Execution</h2>
+
+<p class="fade">
+- SPA funnel built using conditional rendering  
+- CRM tagging (domain + intent)  
+- Sales script personalization  
+</p>
+
+<h2 class="fade">Expected Impact</h2>
+
+<div class="metric-card fade">
+<span>Conversion Rate</span>
+<span>+10–15%</span>
+</div>
+
+<div class="metric-card fade">
+<span>Lead Quality</span>
+<span>↑</span>
+</div>
+
+<div class="metric-card fade">
+<span>Revenue</span>
+<span>↑ Significant</span>
+</div>
+
+<h2 class="fade">Final Insight</h2>
+
+<div class="highlight fade">
 Users don’t drop because the product is weak.  
 They drop because the product does not reflect who they are.
 </div>
-</section>
+
+</div>
 
 <script>
-// Loader
-window.onload = () => {
-  setTimeout(() => {
-    document.getElementById("loader").style.display = "none";
-  }, 1500);
-};
+function selectUser(type){
+  document.getElementById("step2").classList.remove("hidden");
+}
 
-// Fade on scroll
+function selectIntent(){
+  document.getElementById("step3").classList.remove("hidden");
+  document.getElementById("result").classList.remove("hidden");
+}
+
 const faders = document.querySelectorAll('.fade');
 
-const appearOptions = {
-  threshold: 0.2
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add('show');
-    observer.unobserve(entry.target);
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
   });
-}, appearOptions);
-
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
 });
+
+faders.forEach(el => observer.observe(el));
 </script>
 
 </body>
